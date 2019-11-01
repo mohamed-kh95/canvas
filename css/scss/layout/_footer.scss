@@ -1,0 +1,177 @@
+// Start Footer
+footer {
+    overflow: hidden;
+    padding: $mainPadding;
+    background-color: #333;
+    .foot-header {
+        h4 {
+            color: #EEE;
+            font-weight: bold;
+        }
+        .title {
+            font-weight: bold;
+            color: #CCC;
+            font-size: 13px;
+            + p {
+                display: inline-block;
+            }
+        }
+        
+        p {
+            color: #CCC;
+            font-size: 13px;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+    .blogroll {
+        h5 {
+            color: #CCC;
+            font-weight: bold;
+        }
+        ul {
+            font-size: 15px;
+            padding-left: 10px ;
+            li {
+                color: #CCC;
+                line-height: 1.8;
+                position: relative;
+                &:before {
+                    font-family: 'FontAwesome';
+                    content: '\f0da';
+                    position: absolute;
+                    top: 0;
+                    left: -10px;
+                    
+                }
+            }
+        }
+    }
+    .recent {
+        h5 {
+            color: #CCC;
+            font-weight: bold;
+        }
+        p {
+            color: #CCC;
+            margin-bottom: 5px;
+            font-size: 15px;
+            &:not(:first-of-type) {
+                padding-top: 10px;
+            }
+        }
+        span {
+            display: block;
+            font-size: 13px;
+            color: $pColor;
+            padding-bottom: $margin-B;
+            border-bottom: 1px dashed $pColor;
+            &:last-of-type {
+                border-bottom: none
+            }
+        }
+    }
+    .num {
+        display: inline-block;
+        margin-right: 5px;
+        
+        span {
+            &:first-of-type {
+                font-size: 30px;
+                color: #CCC;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+            &:last-of-type {
+                display: block;
+                color: $pColor;
+            }
+        }
+    }
+    .supscribe {
+        p {
+            font-size: 15px;
+            color: #CCC;
+            margin: 10px 0px;
+            span {
+                font-weight: bold;
+            }
+        }
+        form {
+            input[type='email'] {
+                display: block;
+                width: 100%;
+                border: none;
+                padding: 5px;
+                background-color: #444;
+                outline: none;
+                border: 1px solid #222;
+            }
+            input[type='submit'] {
+                display: block;
+                background-color: #5cb85c;
+                border: 1px solid #5cb85c;
+                color: #EEE;
+                width: 100%;
+                padding: 5px;
+                margin: 10px 0px;
+                cursor: pointer;
+            }
+        }
+        .social {
+            display: inline-block;
+            margin-right: 5px ;
+            .icon {
+                display: inline-block;
+                padding: 10px;
+                color: #EEE;
+                cursor: pointer;
+                &.face {
+                    background-color: #3B5998;
+                }
+                &.rss {
+                    background-color: #EE802F ;
+                }
+            }
+            .follow {
+                display: inline-block;
+                position: relative;
+                top: 10px;
+                span {
+                    display: block;
+                    color: #EEE;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+// End Footer
+// Start CopyRight
+.copyright {
+    padding: $mainPadding;
+    background-color: #222;
+    color: #555;
+    .copy {
+        a {
+            color: #555;
+        }
+    }
+    .icons {
+        margin-top: 10px;
+        i {
+            margin: 0px 5px;
+            &:first-of-type {
+                margin: 0;
+            }
+            &:hover {
+                color: #EEE;
+            }
+        }
+    }
+    .email {
+        margin: 10px 0px;
+    }
+    
+}
+// End Copyright
