@@ -1,0 +1,20 @@
+%border-b-center {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 45%;
+    width: 10%;
+    height: 3px;
+}
+%border-b-left {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 10%;
+    height: 3px;
+    display: inline-block;
+}
+.reset {
+    padding: 0;
+}

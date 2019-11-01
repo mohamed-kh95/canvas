@@ -1,0 +1,128 @@
+// Start Navbar
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    border-bottom: 1px solid rgba(#EEE, .5);
+    background-color: transparent;
+    z-index: 10;
+    @media (max-width: 992px) {
+        background-color: #FFF;
+    }
+    .navbar-toggler {
+        @media (max-width: 992px) {
+            order: -3;
+            margin: auto 20px;
+        }
+    }
+    .navbar-brand {
+        color: #FFF;
+        border-right: 1px solid rgba(#EEE, .5);
+        padding: 40px 20px;
+        font-weight: bold;
+        font-size: 25px;
+        transition: padding .3s ease-in-out,
+                    font-size .3s ease-in-out;
+        @media (max-width: 992px) {
+            order: -2;
+            border-right: none;
+            color: #444!important;
+        }
+    }
+    .navbar-nav {
+        padding: 0px;
+        .nav-link {
+            color: #EEE!important;
+            text-transform: uppercase;
+            padding: 45px 20px;
+            transition: padding .3s ease-in-out;
+            @media (max-width: 992px) {
+                padding: 5px 20px;
+                color: #444!important;
+            }
+        }
+        
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        border-left: 1px solid rgba(#EEE, .5);
+        padding: 50px 20px;
+        transition: padding .3s ease-in-out;
+        @media (max-width: 992px) {
+            order: -1;
+            color: #444;
+        }
+        i {
+            margin: 0px 5px;
+        }
+    }
+    
+}
+// navbar moving
+.navbar-moving {
+    background-color: #FFF;
+    transition: all .3s ease-in-out;
+    .navbar-brand {
+        transition: all .3s ease-in-out;
+        color: #444;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .navbar-nav {
+        .nav-link {
+            transition: all .3s ease-in-out;
+            color: #444!important;
+            padding: 10px 20px;
+            &.active {
+                color:#1ABC9C!important;
+            }
+        }
+        
+    }
+    .search {
+        transition: all .3s ease-in-out;
+        color: #444;
+        padding: 15px 20px;
+    }
+}
+// End Navbar
+// Start Header
+.header {
+    background-image: url('../img/parallax.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .header-text {
+        width: 70%;
+        text-align: center;
+        color: #EEE;
+        h3 {
+            font-weight: bold;
+        }
+    }
+    .fa-chevron-left ,
+    .fa-chevron-right {
+        position: absolute;
+        background-color: rgba(#000, .5);
+        color: #EEE;
+        padding: 10px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba(#000, .7);
+        }
+    }
+    .fa-chevron-left {
+        left: 0px;
+    }
+    .fa-chevron-right  {
+        right: 0px;
+    }
+        
+    
+
+}
